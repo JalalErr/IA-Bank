@@ -71,6 +71,13 @@
             <artifactId>spring-ai-starter-mcp-client</artifactId>
         </dependency>
 
+        <!--#Discord dependancie-->
+        <!-- Source: https://mvnrepository.com/artifact/com.discord/discord -->
+        <dependency>
+            <groupId>com.zgamelogic</groupId>
+            <artifactId>spring-boot-starter-discord</artifactId>
+            <version>5.0.4</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
