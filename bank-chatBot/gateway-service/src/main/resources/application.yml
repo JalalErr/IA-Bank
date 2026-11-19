@@ -1,8 +1,14 @@
-#spring:
-#  cloud:
-#    gateway:
-#      server:
-#        webflux:
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                allowedOrigins: ["*"]
+                allowedMethods: ["*"]
+                allowed-headers: ["*"]
 #          routes:
 #            - id: r1
 #              uri: http://localhost:8056

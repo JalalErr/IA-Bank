@@ -25,7 +25,7 @@ public class EbankAIAgent {
 
     public String chat(String query) {
         return chatClient.prompt(query)
-                .advisors(spec -> spec.param(ChatMemory.CONVERSATION_ID, "ID-session-unique"))
+                .advisors(spec -> spec.param(ChatMemory.CONVERSATION_ID, "ID-session"))
                 .call()
                 .content();
     }
