@@ -1,0 +1,11 @@
+import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { provideRouter } from '@angular/router';
+
+import { routes } from './app.routes';
+import {provideHttpClient, withInterceptors} from '@angular/common/http';
+import {provideMarkdown} from 'ngx-markdown';
+import {lodingInterceptorInterceptor} from './interceptors/loding-interceptor.interceptor';
+
+export const appConfig: ApplicationConfig = {
+  providers: [provideBrowserGlobalErrorListeners(), provideRouter(routes), provideMarkdown( ), provideHttpClient(withInterceptors([lodingInterceptorInterceptor]))],
+};
