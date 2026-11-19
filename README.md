@@ -1,8 +1,11 @@
+
 Banking Assistant --- Microservices & AI Chatbot
 An academic project built with Spring Boot and Spring Cloud,
 demonstrating a microservices-based banking system with an AI-powered
 conversational assistant, an LLM integration, and access through a web
 interface and Telegram.
+
+![Architecture](./bank-chatBot/Capture.png)
 
 Overview
 This project demonstrates the design of a distributed banking
@@ -16,8 +19,6 @@ Protocol (MCP) integration shown in the architecture allows the AI
 agent to interact with compatible business services and tools. Telegram
 provides an additional channel for communicating with the assistant.
 Architecture
-
-![Capture d'![Capture d'écran 2026-10-21 220714.png](bank-chatBot/src/main/resources/img/Capture%20d%27%C3%A9cran%202026-10-21%20220714.png)écran 2026-10-21 220714.png](../../Pictures/Screenshots/Capture%20d%27%C3%A9cran%202026-10-21%20220714.png)
 
 Main components
 Component                           Responsibility
@@ -113,3 +114,10 @@ package.json for ports, profiles, and required settings.
 Configuration
 Store sensitive settings in environment variables or an appropriate
 configuration mechanism. For example:
+
+![Architecture](Capture-52.png)
+
+
+![Capture](Capture-53.png)
+
+
